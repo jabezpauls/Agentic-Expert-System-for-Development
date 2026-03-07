@@ -59,7 +59,7 @@ We don't believe in silver bullets. To use this system effectively, you must und
 
 ## 🏗️ System Architecture: How It Works
 
-To drive the system, you must understand its four foundational components:
+To drive the system, you must understand its five foundational components:
 
 ### 1. The Handler Agent (The Orchestrator)
 This is the speaker of the house. The Handler Agent (`HANDLER_AGENT.md`) does not have explicit coding expertise; it relies on **procedural expertise**. It receives your prompt, calculates a "Problem-Domain Relevance Score" (PDRS), routes the query to the correct Domain Agents, orchestrates their debate, resolves any deadlocks, and delivers the finalized brief to you.
@@ -92,6 +92,9 @@ The Wildcard carries a **1.5x voting weight** in internal debates. Their explici
 
 ### 4. The Initiative Compass (The Context Vault)
 The system stores your project's specific Mission, Values, Non-Negotiables, and Constraints inside the local `Knowledge-Vault`. Every single recommendation the 78 experts make is cross-referenced against your Compass. If a tool violates your project's highest constraint, the system automatically rejects it.
+
+### 5. The Librarian (Continuous Memory)
+The system actively learns as you build. A specialized, lightweight agent called "The Librarian" lives inside the `.agents/workflows` directory. Its sole mandate is to observe finalized decisions from your sessions and surgically append them to the Knowledge Vault without engaging the heavy debate process. This ensures your project's context is never lost and always up-to-date.
 
 ---
 
@@ -134,6 +137,9 @@ You can explicitly trigger predefined workflows to manage complex developments:
 - **/Session-Wise Build Planning**
   - *Usage:* Type this when building a massive epic or complex feature.
   - *Action:* To prevent AI context-window overflow and fatal hallucinations, the system will explicitly break the epic into isolated, numbered sessions (`session_01_db.md`, `session_02_api.md`). It will feed the executor agent exactly one session at a time, keeping it perfectly focused while the Handler safely remembers the overarching big picture.
+- **/Librarian - Memory Consolidation**
+  - *Usage:* Triggers automatically at the end of sessions and `/Expert system` workflows, but can also be triggered manually.
+  - *Action:* Forces the AI to adopt the strict "Librarian" persona, process all recent raw session logs, and automatically inject new architectural decisions and bug fixes into the permanent system directories without wasting tokens.
 
 ---
 
