@@ -1,140 +1,84 @@
-# 🏛️ THE AGENTIC EXPERT SYSTEM [v4.0]
+# 🏛️ THE AGENTIC EXPERT SYSTEM
+## High-Performance Architectural Intelligence & Multi-Perspective Reasoning
 
-**78 Perspectives. 13 Domains. 1 Parliament. Zero Dependencies.**
+**78 Specialized Perspectives. 13 Domains. 1 Parliament. Any Project. Total Technical Sovereignty.**
 
-The Agentic Expert System is a universal development orchestration layer that transforms any AI model into a high-performance specialized parliament.
-
----
-
-### 📖 EXPLORE THE SYSTEM
-
-- **[The Vision (MARKETING.md)](MARKETING.md)** — Why use this? High-level benefits, the "Wow" factor, and universal portability.
-- **[The Technical Guide (TEXTBOOK.md)](TEXTBOOK.md)** — How does it work? Architecture E, Tiered Reasoning, PDRS, and Context Optimization.
-- **[The Operations Manual (parliament/SYSTEM_MANIFESTO.md)](parliament/SYSTEM_MANIFESTO.md)** — Core identity, parliamentary procedures, and standards.
+The Agentic Expert System is a **universal orchestration layer** that transforms AI models from generalist tokens-generators into a deployable parliament of domain-specific experts. By injecting structured intelligence directly into your development environment, it ensures that every line of code passed to your AI is audited through 78 distinct reasoning lenses before a recommendation reaches you.
 
 ---
 
-### 🚀 WHY v4?
+### 🛡️ THE CORE PHILOSOPHY: BEYOND THE MEDIAN RESPONSE
 
-- **Model Agnostic**: Works with Claude, GPT, O1, DeepSeek, Llama, and local models.
-- **Architecture E**: 90% cost reduction vs v3 via tiered reasoning.
-- **Persistent Memory**: The Knowledge Vault keeps your project smarter across sessions.
-- **Drop-in Deployment**: No API keys, no databases, no setup. Just markdown.
+Most AI coding assistants provide the **median response** — a safe, generic average of their training data. They rarely challenge their own assumptions or consider cross-domain trade-offs between security, architecture, and user experience.
 
----
-
-## Quick Start
-
-1. **Copy** `Agentic-Expert-System/` into your project root
-2. **Point** your IDE agent at the workflow: `.agents/workflows/Expert system.md`
-3. **Ask** any development question — the system handles routing, perspective loading, wildcard challenges, and memory
-
-That's it. On first contact, the system will scan your project and ask up to 5 questions to calibrate itself.
+**This system solves that by design.** It forces every query through a multi-perspective debate. The result is:
+1. **Documented Dissent**: You see where experts disagree, not just a flattened consensus.
+2. **Project-Specific Reasoning**: The system discovers and aligns with YOUR project’s mission, values, and non-negotiables.
+3. **Anti-Generic Filtering**: A mandatory wildcard voice in every domain is tasked with identifying and destroying generic AI "slop."
 
 ---
 
-## How It Works
+### 📖 TECHNICAL TEXTBOOK: THE OPERATIONAL MODEL
 
-| Layer | When | What Happens | Token Budget |
-|-------|------|-------------|-------------|
-| **Layer 1** | Simple queries (CDRS 0-2) | 13 compressed domain experts check your question | ~8K tokens |
-| **Layer 1.5** | Default for non-trivial queries (CDRS 3-5) | Compressed experts + one full domain deep-dive | ~28K tokens |
-| **Layer 2** | Major decisions (CDRS ≥6 or explicit) | Full 78-perspective parliamentary debate | ~50-75K tokens |
+#### 1. The Multi-Tiered Context Engine
+The system employs a sophisticated tiered approach to manage the trade-off between reasoning depth and computational efficiency. It automatically scales the complexity of its input based on the perceived risk and impact of your query:
 
-**CDRS** (Cross-Domain Risk Score) is computed automatically by counting how many domains' override triggers match your query. Higher cross-domain impact → more perspectives loaded.
+- **Surface Audits**: For routine tasks, the system utilizes compressed intelligence nodes (~500 tokens each) to provide a fast, broad sanity check across all 13 domains.
+- **Escalated Inquiry**: For non-trivial engineering tasks, the system loads the full technical source for the most relevant domain while maintaining high-level awareness across the rest of the parliament.
+- **Parliamentary Plenary**: For critical architectural shifts or security-sensitive decisions, the system invokes the full 78-perspective source set, enabling maximum-depth reasoning.
 
-**Memory** persists across sessions: decisions are domain-tagged in JSON, directives are scoped, user preferences are tracked — all with user-approved writes only.
+#### 2. PDRS: Perspective Discovery & Routing System
+The orchestrator maintains an internal routing matrix that scans every user query against **Veto Conditions** and **Override Triggers**.
+- **Veto Conditions**: Hard stops that force a domain to intervene (e.g., a "Security" veto on sensitive data handling).
+- **Override Triggers**: Topic-based signals that pull specific specialists into the debate even when they aren't the primary focus.
+
+#### 3. The 78-Perspective Architecture (5+1)
+Each of the 13 domains is powered by 6 internal sub-agents:
+- **5 Focused Specialists**: Deep practitioners of specific sub-disciplines (e.g., performance tuning, threat modeling, pedagogy).
+- **1 🃏 Wildcard Provocateur**: A mandatory contrarian with elevated vote weight. Their job is to prevent groupthink and surface the "unconventional alternative" that generalist models often ignore.
 
 ---
 
-## Directory Structure
+### 🧠 PERSISTENT PROJECT MEMORY: THE KNOWLEDGE VAULT
+
+Unlike standard LLM chats that "forget" between sessions, this system builds a **Living Memory** of your project:
+
+- **Initiative Compass**: A dynamic mission statement that defines your project's North Star, constraints, and non-negotiables.
+- **Decision Log**: A domain-tagged record of every major technical pivot, ensuring the system never re-argues an already settled architectural choice.
+- **User Model**: Learns the developer's specific stylistic preferences, quality bars, and cognitive patterns.
+- **Standing Directives**: Hard-coded project rules (e.g., "Always optimize for low-latency," "Never use external libraries for math").
+
+---
+
+### 🕹️ HOW TO USE: DROP-IN DEPLOYMENT
+
+The system is designed to be **Model-Agnostic** and **Portability-First**. It is pure Markdown and JSON — no databases, no API keys, no external dependencies.
+
+#### Integration Pattern:
+1. **Drop** the `Agentic-Expert-System/` folder into any project root.
+2. **Point** your IDE agent (Cursor, VS Code Copilot, Claude Code, etc.) at the workflow entry point: `.agents/workflows/Expert system.md`.
+3. **Interact**: The system will automatically scan your environment, calibrate its Initiative Compass, and begin routing your prompts through the Parliament.
+
+#### Supported Environments:
+- **Frontier Models**: Optimized for deep reasoning models (Claude 3.5, GPT-4o, O1).
+- **Local Models**: Compatible with high-performance local LLMs (DeepSeek, Llama-3).
+- **Any IDE**: Native support for any environment that reads local file context and workflow definitions.
+
+---
+
+### 📊 DIRECTORY STRUCTURE
 
 ```
 Agentic-Expert-System/
-├── .agents/
-│   └── workflows/
-│       └── Expert system.md          # Workflow entry point — the orchestrator
-├── domains/                           # Compressed domain files (~500 tokens each)
-│   ├── D01_strategy.md
-│   ├── D02_ecosystem.md
-│   ├── D03_infrastructure.md
-│   ├── D04_cognition.md
-│   ├── D05_ai_integration.md
-│   ├── D06_product_design.md
-│   ├── D07_open_source.md
-│   ├── D08_systems_ux.md
-│   ├── D09_mathematics.md
-│   ├── D10_security.md
-│   ├── D11_devops.md
-│   ├── D12_complexity.md
-│   └── D13_unconventional.md
-├── memory/                            # Persistent project memory (JSON + markdown)
-│   ├── decisions.json                 # Domain-tagged decisions
-│   ├── directives.json                # Standing orders and constraints
-│   ├── user_model.json                # Developer preference tracking
-│   ├── changelog.md                   # Append-only audit trail
-│   └── session_context.md             # Session checkpoint (auto-updated)
-├── parliament/                        # Full domain files for Layer 1.5/2 escalation
-│   ├── SYSTEM_MANIFESTO.md            # System constitution and principles
-│   ├── HANDLER_AGENT.md               # Parliamentary debate orchestration
-│   ├── ROUTING_PROTOCOL.md            # Domain routing and layer selection
-│   ├── Domain_01_Strategy.md          # Full domain: strategy & viability
-│   ├── Domain_02_Ecosystem.md         # Full domain: market intelligence
-│   ├── Domain_03_Infrastructure.md    # Full domain: architecture & deployment
-│   ├── Domain_04_Cognition.md         # Full domain: developer experience
-│   ├── Domain_05_AI_Integration.md    # Full domain: AI/LLM integration
-│   ├── Domain_06_Product_Design.md    # Full domain: visual design & accessibility
-│   ├── Domain_07_Open_Source.md       # Full domain: code quality & OSS
-│   ├── Domain_08_Systems_UX.md        # Full domain: information architecture
-│   ├── Domain_09_Mathematics.md       # Full domain: algorithms & complexity
-│   ├── Domain_10_Security.md          # Full domain: security & compliance
-│   ├── Domain_11_DevOps.md            # Full domain: CI/CD & monitoring
-│   ├── Domain_12_Complexity.md        # Full domain: complexity reduction
-│   ├── Domain_13_Unconventional.md    # Full domain: creative disruption
-│   ├── Custom-Agents/
-│   │   ├── AGENT_REGISTRY.md          # Registry of custom domain agents
-│   │   └── CUSTOM_AGENT_TEMPLATE.md   # Template for creating new domains
-│   └── Knowledge-Vault/
-│       ├── VAULT_INDEX.md             # Knowledge vault index
-│       ├── initiative-compass.md      # Initiative compass template
-│       └── user-model.md             # User model template
-├── initiative-compass.md              # Active project compass (auto-populated)
-├── README.md                          # This file
-└── DISTILL.md                         # Guide for re-compressing domain files
+├── .agents/workflows/        # The orchestrator and entry point
+├── domains/                  # Compressed intelligence nodes (High Speed)
+├── memory/                   # Persistent project brain (JSON/Markdown)
+├── parliament/               # Full specialist source files (High Depth)
+│   ├── Knowledge-Vault/      # Architectural reference templates
+│   └── Custom-Agents/        # Framework for extending with your own domains
+└── initiative-compass.md     # Your project's active mission and constraints
 ```
 
 ---
 
-## Customization
-
-### Adding Custom Domain Agents
-Use the template at `parliament/Custom-Agents/CUSTOM_AGENT_TEMPLATE.md` to create a new domain expert. Register it in `parliament/Custom-Agents/AGENT_REGISTRY.md`. The orchestrator will automatically include it in CDRS computation and routing.
-
-### Modifying Compressed Domains
-If you edit a full domain file in `parliament/`, you must re-generate its compressed version in `domains/`. See `DISTILL.md` for the exact distillation process and validation checklist.
-
-### Initiative Compass
-Auto-populated on first contact via the Bootstrap Protocol. You can edit `initiative-compass.md` at any time to refine your project's mission, constraints, and quality bar.
-
----
-
-## Cost Estimates
-
-| Layer | Recommended Model | Tokens/Query | Cost/Query | Monthly (50q/day) |
-|-------|------------------|-------------|-----------|-------------------|
-| Layer 1 | Any (7B+, Haiku) | ~8,000 | ~$0.002 | ~$3 |
-| Layer 1.5 | Sonnet | ~28,000 | ~$0.07 | ~$100 |
-| Layer 2 | Opus | ~50-75,000 | ~$0.25 | ~$375 |
-| **Mixed (typical)** | Mixed | — | — | **~$10** |
-
-Most queries resolve at Layer 1 or 1.5. Layer 2 activates only for high-impact decisions.
-
----
-
-## Portability
-
-- No external dependencies
-- No database, no API keys, no build step
-- Memory starts empty — fresh for every project
-- Works offline with local models (Layer 1 and 1.5)
-- Pure markdown and JSON — version-controllable, diffable, auditable
+> "78 perspectives, 13 domains, 3 clusters, 13 wildcards, 1 parliament — the collective intelligence that refuses to settle for the obvious answer. Better decisions, faster, with the receipts to prove why."
