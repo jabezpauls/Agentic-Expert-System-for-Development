@@ -2,7 +2,7 @@
 
 > Living document maintained by the Handler Agent. Updated whenever the user/developer expresses objectives, values, constraints, or non-negotiables. This is the reference frame against which ALL domain recommendations are checked.
 >
-> **This compass is initiative-agnostic.** It adapts to whatever project or development the Agentic Expert System is associated with. The Handler Agent populates each section through inference (Steps 1-4 of the Bootstrap Protocol) and user validation. When re-associated with a different initiative, the previous state is archived to `Knowledge-Vault/context/`.
+> **This compass is initiative-agnostic.** It adapts to whatever project or development the Agentic Expert System is associated with. The Handler Agent populates each section through inference (Steps 1-4 of the Bootstrap Protocol) and user validation. When re-associated with a different initiative, the previous state is archived to `memory/`.
 
 **Last Updated:** (not yet initialized)
 **Status:** Template
@@ -150,7 +150,7 @@
 
 **Protocol:**
 - When the user/developer describes a new project, the Handler populates this compass via Bootstrap Steps 1-4
-- If the compass is re-associated with a different initiative, the previous state is archived to `Knowledge-Vault/context/` with filename `[date]_initiative-compass-archived_[initiative-name].md`
+- If the compass is re-associated with a different initiative, the previous state is archived to `memory/` with filename `[date]_initiative-compass-archived_[initiative-name].md`
 - The log above is append-only — it provides a full history of what this compass has served
 - Valid actions: `Associated`, `Updated`, `Archived`, `Re-associated`, `Branched`
 - For parallel initiatives, the Handler creates `initiative-compass-[name].md` branches and references them from this master file

@@ -202,11 +202,13 @@ If user approves:
 1. Append to `memory/decisions.json`:
    ```json
    {
+     "id": "DEC-YYYY-MM-DD-NNN",
      "date": "YYYY-MM-DD",
      "summary": "[decision text]",
-     "domain_tags": ["D01", "D03"],
-     "context": "[brief context]",
-     "layer": "1.5"
+     "domains": ["D01", "D03"],
+     "rationale": "[brief rationale]",
+     "dissent": "[any dissenting perspectives]",
+     "status": "active"
    }
    ```
 2. Append to `memory/changelog.md`:
@@ -223,11 +225,11 @@ If the user issues a standing instruction ("always do X", "never do Y"):
 2. On approval, append to `memory/directives.json`:
    ```json
    {
-     "date": "YYYY-MM-DD",
-     "directive": "[instruction text]",
-     "scope": "global|domain-specific",
-     "domain_tags": ["D01"],
-     "status": "active"
+     "id": "DIR-YYYY-MM-DD-NNN",
+     "summary": "[instruction text]",
+     "scope": "backend|frontend|all",
+     "source": "User-stated",
+     "active": true
    }
    ```
 3. Log to `memory/changelog.md`
@@ -312,6 +314,5 @@ On user approval:
 - **File paths** in this document are relative to the `Agentic-Expert-System/` root directory.
 - **Token estimates** are approximate. Adjust layer thresholds if running on models with smaller context windows.
 - **Custom agents**: Check `parliament/Custom-Agents/AGENT_REGISTRY.md` for registered custom domains. Include them in CDRS computation and routing alongside the 13 core domains.
-- **Knowledge Vault**: `parliament/Knowledge-Vault/` stores reference templates. Active knowledge is in `memory/` (JSON files + session context).
 - **Escalation shortcut**: The user can say "escalate" or "full parliament" at any time to force Layer 2 operation.
 - **De-escalation**: After a Layer 2 response, return to Layer 1.5 for follow-up questions unless the topic remains high-CDRS.

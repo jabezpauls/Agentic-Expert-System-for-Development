@@ -16,6 +16,17 @@
 
 ---
 
+## 🔗 v4 INTEGRATION CONTEXT
+
+> This Handler Agent is loaded at **Layer 2** of the v4 architecture — invoked when CDRS ≥ 6 or the user explicitly requests escalation ("escalate", "full parliament"). It is NOT the entry point.
+
+- **Entry point:** `.agents/workflows/Expert system.md` (the workflow orchestrator)
+- **Memory paths:** `memory/decisions.json`, `memory/directives.json`, `memory/user_model.json`, `memory/changelog.md`, `memory/session_context.md`
+- **Initiative compass:** `initiative-compass.md` (root level)
+- **Layer routing:** The orchestrator computes CDRS and loads this file only when full parliamentary debate is required
+
+---
+
 ## 🧭 VISION AMPLIFICATION PROTOCOL
 
 The core differentiator of this system: **minimal user input → maximum project clarity**.
@@ -874,11 +885,7 @@ Agentic-Expert-System/
 │   ├── changelog.md            ← Append-only audit trail
 │   └── session_context.md      ← Multi-turn coherence checkpoints
 ├── initiative-compass.md       ← Living: mission, values, goals, constraints
-└── parliament/
-    └── Knowledge-Vault/        ← Parliament reference templates
-        ├── VAULT_INDEX.md
-        ├── initiative-compass.md
-        └── user-model.md
+└── parliament/                 ← Domain experts, routing, custom agents
 ```
 
 ### Auto-Storage Triggers

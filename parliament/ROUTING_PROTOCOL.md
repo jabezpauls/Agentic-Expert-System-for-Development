@@ -117,7 +117,6 @@ User Query
 | [parliament/Custom-Agents/](Custom-Agents/) | Custom domain agents for project-specific expertise | On startup — check AGENT_REGISTRY.md |
 | [parliament/Custom-Agents/AGENT_REGISTRY.md](Custom-Agents/AGENT_REGISTRY.md) | Master index of all custom agents | Before routing — load active agents |
 | [parliament/Custom-Agents/CUSTOM_AGENT_TEMPLATE.md](Custom-Agents/CUSTOM_AGENT_TEMPLATE.md) | Template for creating new custom agents | When user needs project-specific expertise |
-| [parliament/Knowledge-Vault/](Knowledge-Vault/) | Parliament reference templates | For full parliament sessions |
 | [initiative-compass.md](../initiative-compass.md) | Active project compass | Every session — loaded by orchestrator |
 
 ---
@@ -208,12 +207,7 @@ The Handler Agent supports 4 modes. Select based on user need:
 
 ### For Different Project Types:
 
-The system auto-adapts. See SYSTEM_MANIFESTO.md for the Project Type Adaptability matrix. Examples:
-- **Web App** → Emphasizes Domains 3, 6, 7, 8, 10
-- **CLI Tool** → Emphasizes Domains 4, 7, 9, 12
-- **AI Product** → Emphasizes Domains 5, 9, 3, 10
-- **Open Source Library** → Emphasizes Domains 7, 4, 12, 9
-- **Startup MVP** → Emphasizes Domains 1, 2, 12, 7
+The system auto-adapts domain emphasis based on project type. See **SYSTEM_MANIFESTO.md → Project Type Adaptability** for the full matrix.
 
 ### Context Window Optimization:
 
@@ -264,35 +258,9 @@ The memory system stores persistent information across sessions:
 
 ## Custom Domain Agents
 
-The 13 core domains cover universal development concerns. When your project needs domain-specific expertise that the core system doesn't specialize in, you create **custom domain agents**.
+See **SYSTEM_MANIFESTO.md → Custom Agent Extension Framework** for when and how to create custom agents. See **HANDLER_AGENT.md → Custom Agent Discovery & Routing** for Extended PDRS scoring and routing integration.
 
-### When to Create a Custom Agent
-
-| Project Type | Suggested Custom Agent |
-|-------------|----------------------|
-| EdTech / e-learning | Learning Science & Pedagogy |
-| Healthcare | Clinical Data & Regulatory Compliance |
-| Fintech | Financial Regulation & Risk Modeling |
-| Gaming | Game Design & Player Psychology |
-| E-commerce | Commerce & Conversion Optimization |
-| IoT / Embedded | Hardware-Software Interface |
-| Legal Tech | Legal Reasoning & Compliance |
-| Social Platform | Community Dynamics & Trust/Safety |
-
-### How to Create One
-
-1. Copy `parliament/Custom-Agents/CUSTOM_AGENT_TEMPLATE.md`
-2. Fill in the template following the Standard Agent Specification Format
-3. Register the agent in `parliament/Custom-Agents/AGENT_REGISTRY.md`
-4. The Handler Agent will automatically discover and route to it
-
-### How Custom Agents Integrate
-
-- Custom agents follow the **same structure** as core domains (5 + 1 Wildcard perspectives)
-- They produce **standard DAS** (Domain Assessment Summaries) in parliamentary debate
-- They join their **declared Cluster Affinity** for Tier 2 synthesis
-- They have **equal authority** to core domains — no second-class citizens
-- They use the **Extended PDRS** formula for routing (see HANDLER_AGENT.md)
+**Quick reference:** Copy `parliament/Custom-Agents/CUSTOM_AGENT_TEMPLATE.md`, register in `parliament/Custom-Agents/AGENT_REGISTRY.md`. Custom agents have equal authority to core domains.
 
 ---
 

@@ -74,13 +74,9 @@ YOUR PROJECT/
     │   ├── Domain_11_DevOps.md
     │   ├── Domain_12_Complexity.md
     │   ├── Domain_13_Unconventional.md
-    │   ├── Custom-Agents/                          ← Project-specific domain experts
-    │   │   ├── AGENT_REGISTRY.md
-    │   │   └── CUSTOM_AGENT_TEMPLATE.md
-    │   └── Knowledge-Vault/                        ← Parliament reference templates
-    │       ├── VAULT_INDEX.md
-    │       ├── initiative-compass.md
-    │       └── user-model.md
+    │   └── Custom-Agents/                          ← Project-specific domain experts
+    │       ├── AGENT_REGISTRY.md
+    │       └── CUSTOM_AGENT_TEMPLATE.md
     ├── initiative-compass.md                       ← Active project compass (root)
     └── README.md                                   ← System documentation
 ```
@@ -311,107 +307,27 @@ Domains are organized into **3 parliamentary clusters**, each with natural affin
 
 ### Cluster Responsibilities
 
-**Strategy Cluster** — Answers: *"What should we build and why?"*
-- Project viability and strategic direction
-- Competitive landscape and ecosystem positioning
-- AI/technology strategy and integration decisions
-- Growth, scaling, and sustainability decisions
-- Unconventional approaches and creative disruption (Domain 13 — cross-cutting advisory)
+| Cluster | Core Question | Domains |
+|---------|--------------|--------|
+| **Strategy (S)** | *"What should we build and why?"* | 1 (Strategy), 2 (Market), 5 (AI), 13 (Unconventional) |
+| **Technical (T)** | *"How should we build it?"* | 3 (Infrastructure), 7 (OSS), 9 (Math), 10 (Security), 11 (DevOps), 12 (Complexity) |
+| **Human (H)** | *"Who are we building for?"* | 4 (Cognition), 6 (Design), 8 (UX) |
 
-**Technical Cluster** — Answers: *"How should we build it?"*
-- Architecture and infrastructure decisions
-- Code quality, testing, open-source practices, and OSS ecosystem intelligence
-- Dynamic industry tooling recommendations (libraries, frameworks, OSS repositories)
-- Mathematical rigor and algorithmic correctness
-- Performance and scalability engineering
-- Security architecture and trust design
-- Internal systems, distributed architecture, DevOps, and operational readiness
-- Complexity reduction and simplification (Domain 12 — cross-cutting advisory)
-
-**Human Cluster** — Answers: *"Who are we building for and how do they experience it?"*
-- Developer experience and cognitive ergonomics
-- User psychology and behavior modeling
-- Product design and visual systems
-- Information architecture and user flows
-- Accessibility, inclusivity, and emotional design
-
-### Intra-Cluster Communication
-Agents within the same cluster can communicate directly without Handler Agent mediation. They share context naturally and can resolve domain-adjacent conflicts independently.
-
-### Inter-Cluster Communication
-Cross-cluster communication MUST go through the Handler Agent, which:
-1. Translates domain-specific language for the receiving cluster
-2. Identifies potential conflicts before they escalate
-3. Ensures all relevant clusters are consulted for systemic decisions
-4. Maintains parliamentary order (no cluster dominates)
+**Communication:** Intra-cluster agents communicate directly. Cross-cluster communication goes through the Handler Agent. See **HANDLER_AGENT.md → Parliamentary Structure** for full cluster registry, perspective names, and communication protocols.
 
 ---
 
 ## 🔄 SYSTEM WORKFLOWS
 
-### Workflow 1: New Project Assessment
-```
-1. Handler Agent receives project artifacts (repo, docs, description, or even just a name)
-2. Handler Agent distributes to ALL 13 domain agents simultaneously
-3. Each domain agent conducts internal 6-perspective assessment
-   (Service-role domains — 7, 10, 11, 12, 13 — additionally produce
-    cross-cutting advisory intelligence shared with all domains)
-4. Each domain agent produces domain-specific assessment report
-5. Handler Agent collects reports from all 3 clusters
-6. Handler Agent synthesizes cross-domain assessment
-7. Handler Agent identifies conflicts between domain recommendations
-8. Handler Agent triggers targeted debates to resolve conflicts
-9. Handler Agent produces unified assessment with dissent log
-```
+The system supports 5 core workflows. See **HANDLER_AGENT.md → Operational Modes** for complete procedural details.
 
-### Workflow 2: Specific Development Task
-```
-1. User poses a development question, bug, feature request, or design challenge
-2. Handler Agent analyzes query → routes to relevant domain(s) via PDRS scoring
-3. Primary domain agent conducts internal debate
-4. Primary domain identifies cross-domain dependencies
-5. Handler Agent routes dependencies to secondary domain(s)
-6. All consulted domains return recommendations
-7. Handler Agent synthesizes, noting agreement/disagreement areas
-8. Handler Agent returns ACTIONABLE recommendation with confidence level
-```
-
-### Workflow 3: Cross-Domain Conflict Resolution
-```
-1. Two or more domains produce conflicting recommendations
-2. Handler Agent convenes a "joint session" with conflicting agents
-3. Each domain states its position with evidence
-4. Handler Agent identifies the root of the conflict:
-   a. Different values → Escalate to initiative alignment
-   b. Different facts → Commission research/data gathering
-   c. Different trade-offs → Present Pareto frontier to user
-5. Handler Agent calls vote if consensus is not reached
-6. Dissenting opinions are logged (never silenced)
-```
-
-### Workflow 4: Initiative Alignment Check
-```
-1. A recommendation is produced
-2. Handler Agent checks against the Initiative Compass:
-   - Does it align with the stated MISSION?
-   - Does it honor the declared VALUES?
-   - Does it advance the defined GOALS?
-   - Does it respect the CONSTRAINTS?
-   - Does it violate any NON-NEGOTIABLES?
-3. If any check fails, Handler Agent triggers re-evaluation
-4. Domain agents must revise within initiative constraints
-```
-
-### Workflow 5: AI Agent Routing
-```
-1. External AI agent (Copilot, Claude, GPT, etc.) receives user prompt
-2. AI agent reads the workflow orchestrator (.agents/workflows/Expert system.md)
-3. Workflow orchestrator determines query complexity and selects layer
-4. AI agent loads relevant domain file(s) based on CDRS + PDRS scoring
-5. Domain perspectives are applied to the problem
-6. Response is structured per the DAS format
-7. User receives a multi-perspective answer instead of a single-perspective one
-```
+| Workflow | Trigger | Summary |
+|----------|---------|--------|
+| **New Project Assessment** | First contact / new project | All 13 domains assess → cluster synthesis → unified recommendation with dissent |
+| **Specific Development Task** | User asks a question | PDRS routing → primary + secondary domain debate → actionable recommendation |
+| **Cross-Domain Conflict Resolution** | Domains disagree | Joint session → root cause analysis → vote if needed → dissent logged |
+| **Initiative Alignment Check** | Any recommendation produced | Check against Initiative Compass (mission, values, goals, constraints, non-negotiables) |
+| **AI Agent Routing** | External AI agent starts | Read orchestrator → CDRS + PDRS → load domains → multi-perspective response |
 
 ---
 
