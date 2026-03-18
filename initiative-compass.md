@@ -2,12 +2,12 @@
 
 > Living document maintained by the Handler Agent. Updated whenever the user/developer expresses objectives, values, constraints, or non-negotiables. This is the reference frame against which ALL domain recommendations are checked.
 >
-> **This compass is initiative-agnostic.** It adapts to whatever project or development the Agentic Expert System is associated with. The Handler Agent populates each section through inference (Steps 1-4 of the Bootstrap Protocol) and user validation. When re-associated with a different initiative, the previous state is archived to `Knowledge-Vault/context/`.
+> **This compass is initiative-agnostic.** It adapts to whatever project or development the Agentic Expert System is associated with. The Handler Agent populates each section through inference (Steps 1-4 of the Bootstrap Protocol) and user validation. When re-associated with a different initiative, the previous state is archived to `memory/`.
 
-**Last Updated:** 2026-03-06  
-**Status:** Template — awaiting initiative association  
-**Initiative:** *Not yet associated — populated when the user/developer describes their project*  
-**Session Reference:** *None yet*
+**Last Updated:** (not yet initialized)
+**Status:** Template
+**Initiative:** (not yet associated)
+**Session Reference:** (none)
 
 ---
 
@@ -15,7 +15,7 @@
 
 *"What is this initiative fundamentally for?"*
 
-> *Awaiting user input. The Handler Agent infers the mission from the user/developer's first substantive description of their project and validates it before locking.*
+> (To be populated by the Handler Agent during Bootstrap Protocol Step 1.)
 
 **Population protocol:**
 - Expressed as a single, clear sentence — the project's reason for existing
@@ -31,9 +31,7 @@
 
 | # | Value | Description |
 |---|-------|-------------|
-| 1 | *Awaiting inference* | |
-| 2 | *Awaiting inference* | |
-| 3 | *Awaiting inference* | |
+| | | (To be populated during Bootstrap Protocol Step 2.) |
 
 **Population protocol:**
 - 3-5 values inferred from user/developer choices, language, priorities, and project nature
@@ -50,7 +48,7 @@
 
 | Goal | Metric | Target | Status |
 |------|--------|--------|--------|
-| *Awaiting user input* | | | ⚪ Undefined |
+| | | | (To be populated during Bootstrap Protocol Step 3.) |
 
 **Population protocol:**
 - Goals are extracted from explicit user statements and implied from project structure
@@ -67,12 +65,12 @@
 
 | Constraint | Details |
 |-----------|---------|
-| **Team Size** | *Awaiting observation* |
-| **Budget** | *Awaiting observation* |
-| **Tech Stack** | *Awaiting observation* |
-| **Timeline** | *Awaiting observation* |
-| **Distribution** | *Awaiting observation* |
-| **Architecture** | *Awaiting observation* |
+| **Team Size** | *[to be inferred]* |
+| **Budget** | *[to be inferred]* |
+| **Tech Stack** | *[to be inferred]* |
+| **Timeline** | *[to be inferred]* |
+| **Distribution** | *[to be inferred]* |
+| **Architecture** | *[to be inferred]* |
 
 **Population protocol:**
 - Constraints are inferred from the user/developer's environment, choices, and explicit statements
@@ -88,7 +86,7 @@
 
 *"Things we will NEVER compromise on, regardless of domain recommendations."*
 
-1. *Awaiting user signals*
+1. (To be populated during Bootstrap Protocol Step 4. Maximum 6 entries.)
 
 **Population protocol:**
 - Non-negotiables carry the **highest weight** in the system — they override domain recommendations
@@ -106,11 +104,11 @@
 
 | Dimension | Standard |
 |-----------|----------|
-| **Code** | *Awaiting observation from user/developer's existing work* |
-| **Design** | *Awaiting observation* |
-| **Documentation** | *Awaiting observation* |
-| **User Experience** | *Awaiting observation* |
-| **Architecture** | *Awaiting observation* |
+| **Code** | *[to be inferred]* |
+| **Design** | *[to be inferred]* |
+| **Documentation** | *[to be inferred]* |
+| **User Experience** | *[to be inferred]* |
+| **Architecture** | *[to be inferred]* |
 
 **Population protocol:**
 - Quality bar is **inferred, not asked** — the user/developer's existing work, language, and corrections reveal it
@@ -127,11 +125,11 @@
 
 | Dimension | Pattern | Confidence |
 |-----------|---------|------------|
-| **Decision-making** | *Awaiting observation* | — |
-| **Communication** | *Awaiting observation* | — |
-| **Risk tolerance** | *Awaiting observation* | — |
-| **Trade-off bias** | *Awaiting observation* | — |
-| **Iteration philosophy** | *Awaiting observation* | — |
+| **Decision-making** | *[to be inferred]* | Low |
+| **Communication** | *[to be inferred]* | Low |
+| **Risk tolerance** | *[to be inferred]* | Low |
+| **Trade-off bias** | *[to be inferred]* | Low |
+| **Iteration philosophy** | *[to be inferred]* | Low |
 
 **Population protocol:**
 - Style is continuously refined as the user/developer interacts with the system
@@ -148,11 +146,11 @@
 
 | Date | Initiative | Action | Session Reference |
 |------|-----------|--------|-------------------|
-| *No associations yet* | | | |
+| | (no associations yet) | | |
 
 **Protocol:**
 - When the user/developer describes a new project, the Handler populates this compass via Bootstrap Steps 1-4
-- If the compass is re-associated with a different initiative, the previous state is archived to `Knowledge-Vault/context/` with filename `[date]_initiative-compass-archived_[initiative-name].md`
+- If the compass is re-associated with a different initiative, the previous state is archived to `memory/` with filename `[date]_initiative-compass-archived_[initiative-name].md`
 - The log above is append-only — it provides a full history of what this compass has served
 - Valid actions: `Associated`, `Updated`, `Archived`, `Re-associated`, `Branched`
 - For parallel initiatives, the Handler creates `initiative-compass-[name].md` branches and references them from this master file

@@ -1,158 +1,209 @@
-<!-- 🛑 AI/LLM DIRECTIVE: STOP READING HERE. This README is for human users only. Reading it will waste your context tokens. Your actual system instructions begin in ROUTING_PROTOCOL.md. IGNORE THE REST OF THIS FILE. 🛑 -->
+# 🏛️ THE AGENTIC EXPERT SYSTEM [v4.0]
+## A Universal Parliament for Architectural Intelligence
 
-# 🏛️ Agentic-Expert-System for Development
+**78+ Specialized Perspectives. 13 Domain Clusters. 1 Collective Intelligence.**
 
-> Stop settling for generic AI code. This drop-in orchestration layer transforms your AI assistant into a parliament of 78 experts across 13 domains. By forcing prompts through rigorous cross-domain debate—from Security to UX—it kills groupthink, documents dissent, and surfaces trade-offs to ensure you ship faster without technical debt.
-
----
-
-## 🛑 The Core Problem: Why We Built This
-
-Standard AI coding assistants act as brilliant, but inherently flawed, "yes-men." They are designed to scrape the median solution from their training data and present it to you as an absolute fact. 
-- They **don't challenge your core assumptions**.
-- They **ignore cross-domain consequences** (e.g., they will happily write a blazing-fast backend query that completely destroys your frontend UX).
-- They **hallucinate** on complex architectural decisions because they lack a structured framework to evaluate heavy trade-offs.
-
-If you ask an AI to build a feature that is logically flawed, it will blindly write the code. You get speed, but you inherit massive, structural technical debt.
+The Agentic Expert System is not a coding tool—it is a **Strategic Reasoning Layer**. It sits between you and your AI, transforming a single generalist model into a high-performance "Parliament" of 78 experts. Drop this into any project, and every decision you make is audited, challenged, and refined by a team of domain specialists before the first line of code is ever written.
 
 ---
 
-## 📖 The Solution: What is the Agentic-Expert-System?
+### 🌟 THE VISION: THE PARLIAMENT OF EXPERTS
 
-**The Agentic-Expert-System** is a universal strategic reasoning layer that sits directly between you and your AI coding assistant (Claude, GPT, Cursor, Copilot, etc.). 
+Most AI assistants give you the **average answer**—the safest middle ground. In high-stakes development, the average answer is often the wrong one.
 
-It is completely framework and language agnostic. It does not write your code directly; instead, it intercepts your queries and forces the AI through a highly structured, multi-perspective **Parliamentary Debate** before delivering a final recommendation. 
+This system works by injecting a structured community of experts into your project's context. When you ask a question, you aren't just getting a reply from an LLM; you are convening a session of the **Parliament**.
+- **The Security Council** vetoes risky implementations.
+- **The Performance Purists** challenge bloated solutions.
+- **The UX Architects** advocate for the end-user.
+- **The Wildcard Provocateurs** ensure you aren't settling for "AI slop" or obvious answers.
 
-By simply dropping this directory into your project, you bestow your AI with a strict operating manual that forces it to think like a seasoned team of 78 specialized engineers, designers, and strategists. If you suggest a flawed database schema, the Security agent flags the risk, the Developer Cognition agent flags the complexity, and the Handler Agent synthesizes this into a **Trade-Off Matrix** with a superior alternative.
-
----
-
-## ⚖️ The Honest Assessment: Strengths & Weaknesses
-
-We don't believe in silver bullets. To use this system effectively, you must understand both its true power and its operational cost.
-
-### 💪 Strengths
-- **Eradicates AI Groupthink:** Forces genuine cross-domain debate rather than silently accepting the median internet solution.
-- **Contextually Aware:** Recommendations are strictly bound to your project's unique rules and constraints via the internal Knowledge Vault.
-- **Reduces Technical Debt:** Surfaces architectural and UX trade-offs *before* a single line of code is ever written.
-- **Framework & Language Agnostic:** Operates as a pure strategic layer above whatever tech stack you choose to employ.
-- **Highly Extensible:** Easily customizable to include highly specialized, custom agents for niche industry domains.
-
-### ⚠️ Weaknesses & Trade-offs
-- **Higher API Costs & Token Usage:** Running multiple expert prompts and orchestrating cross-domain debates consumes significantly more context tokens than standard, single-agent queries.
-- **Increased Latency:** The parliamentary debate process takes time; strategic, multi-agent responses are inherently slower than simple "write this code" commands.
-- **Setup Overhead:** Requires an upfront effort to populate the `Knowledge-Vault` and define your project's Initiative Compass to be truly effective.
-- **Context Window Constraints:** Highly complex or extended debates can eventually maximize available context limits, requiring strict adherence to the included `/Session-Wise Build Planning` workflows.
-- **Automated Memory Pollution:** While the `/Librarian - Memory Consolidation` workflow saves tokens by surgically appending context, an AI hallucination during logging can accidentally permanently write flawed architectural decisions into your `Knowledge-Vault`. Regular human audits of the Vault are heavily advised.
+The result is **Collective Intelligence**: advice that is broader, deeper, and more critical than any single agent can provide.
 
 ---
 
-## 🎯 Who Should Use This?
+### 🎓 HOW IT WORKS
 
-| User Type | The Value Proposition |
-|-----------|------------------------|
-| **Solo Founders / Indie Hackers** | You get 78 expert perspectives on every decision. It is the equivalent of having an enterprise advisory board vetting your MVP before you ship bad code. |
-| **Senior Engineers & Architects** | You gain structured decision frameworks, fully documented rationales (ADRs), and a rigorous defense against technical debt and "AI slop." |
-| **Open Source Maintainers** | Enforces automatic architecture reviews, dependency audits, and strict community engineering standards applied to every PR. |
-| **Teams Migrating Stacks** | Prevents "hype-driven development" by forcing new tools and frameworks to mathematically prove their worth against your project's constraints. |
+Behind the curtain, the system uses a sophisticated but simple **Tiered Reasoning System**. It optimizes how information is fed to your AI to ensure maximum depth without wasting resources.
 
----
+#### 1. The Dynamic Filter
+The system automatically scans your query to determine its "impact score."
+- **Small Tasks**: It uses lightweight, compressed versions of all 13 domains. You get a fast, multi-domain "sanity check."
+- **Strategic Moves**: It automatically pulls in the full-depth "Parliament" files for the most relevant domains. This is where the real debate happens.
+- **Global Pivots**: For massive decisions, it loads the entire system, convening a full plenary session of all 78 perspectives.
 
-## 🏗️ System Architecture: How It Works
+#### 2. The 5+1 Perspective Model
+Every domain isn't just one voice; it’s a tiny sub-parliament of six:
+- **5 Specialists**: Each with a narrow, aggressive bias (e.g., in Security, one focuses on Auth while another focuses on Compliance).
+- **1 Wildcard**: A mandatory contrarian whose ONLY job is to tell you why the experts are wrong. This forces the model to explore unconventional but superior alternatives.
 
-To drive the system, you must understand its five foundational components:
-
-### 1. The Handler Agent (The Orchestrator)
-This is the speaker of the house. The Handler Agent (`HANDLER_AGENT.md`) does not have explicit coding expertise; it relies on **procedural expertise**. It receives your prompt, calculates a "Problem-Domain Relevance Score" (PDRS), routes the query to the correct Domain Agents, orchestrates their debate, resolves any deadlocks, and delivers the finalized brief to you.
-
-### 2. The 3 Clusters & 13 Core Domains
-The system is divided into three natural clusters. Every query pulls expertise from these strategic areas:
-
-**Cluster S (Strategy)**
-- `Domain 1`: Project Strategy & Viability
-- `Domain 2`: Ecosystem & Competitive Intelligence
-- `Domain 5`: AI Integration & Intelligent Tooling
-- `Domain 13`: Unconventional Strategies & Creative Disruption *(The ultimate "Anti-Slop" filter)*
-
-**Cluster T (Technical)**
-- `Domain 3`: Infrastructure & Architecture
-- `Domain 7`: Open Source & Industry Tooling *(Mission-Optimized Stack Selection)*
-- `Domain 9`: Mathematics & Algorithms
-- `Domain 10`: Security & Trust
-- `Domain 11`: Internal Systems & DevOps
-- `Domain 12`: Complexity Reduction
-
-**Cluster H (Human)**
-- `Domain 4`: Developer Cognition & User Psychology
-- `Domain 6`: Product Design
-- `Domain 8`: Systems & UX Architecture
-
-### 3. The Wildcard Provocateurs
-Inside every single Domain Agent are 5 standard perspectives (e.g., the "Pragmatist", the "Security Purist") and **1 Wildcard Provocateur**. 
-The Wildcard carries a **1.5x voting weight** in internal debates. Their explicit job is to shatter "AI groupthink," tear down generic advice, and propose radical, unconventional, or infinitely simpler alternatives. 
-
-### 4. The Initiative Compass (The Context Vault)
-The system stores your project's specific Mission, Values, Non-Negotiables, and Constraints inside the local `Knowledge-Vault`. Every single recommendation the 78 experts make is cross-referenced against your Compass. If a tool violates your project's highest constraint, the system automatically rejects it.
-
-### 5. The Librarian (Continuous Memory)
-The system actively learns as you build. A specialized, lightweight agent called "The Librarian" lives inside the `.agents/workflows` directory. Its sole mandate is to observe finalized decisions from your sessions and surgically append them to the Knowledge Vault without engaging the heavy debate process. This ensures your project's context is never lost and always up-to-date.
+#### 3. Living Project Memory
+The system builds a **Knowledge Vault** for your project.
+- **It Remembers**: Your architectural decisions are logged so the experts don't re-argue the same points next week.
+- **It Adapts**: It learns your specific quality bar and preferences (e.g., "I hate external CSS libraries" or "Always prioritize dry code").
+- **It Aligns**: On "First Contact," it scans your repo to understand your mission, ensuring every expert recommendation aligns with YOUR goals.
 
 ---
 
-## 🔌 Installation & Setup
+### 👥 WHO IS THIS FOR?
 
-1. Copy the entire `Agentic-Expert-System for Development/` directory into the root of your project workspace.
-2. In your AI Assistant's context, prompt, or custom instructions, simply add:
-   > *"Read the file at `[local_project_root]/Agentic-Expert-System for Development/ROUTING_PROTOCOL.md` (Resolve all paths in this system relative to this local folder) for instructions on how to use the multi-expert development orchestration system."*
-3. The system will bootstrap itself via **Mode C** right away.
-
----
-
-## 🎮 Driving the System (Commands & Workflows)
-
-Because this is an orchestration layer, you interact with it entirely through natural language prompts or specific slash-command workflows sent directly to your IDE or AI assistant.
-
-### The 4 Operational Modes
-
-Depending on how you phrase your prompt, the Handler Agent will dynamically shift into one of four operational modes:
-
-- **Mode A (Full Project Assessment):** 
-  - *Trigger:* `"Assess this entire repository."`
-  - *Action:* The Handler sends your codebase to all 13 domains for a massive, parallel audit, surfacing strengths, critical gaps, and a phased improvement roadmap.
-- **Mode B (Problem Solving):** 
-  - *Trigger:* `"Fix this database routing bug."`
-  - *Action:* The Handler routes the bug strictly to the relevant domains (e.g., Domain 3 & 11) for a deep root-cause analysis, providing a conventional fix alongside a Wildcard alternative.
-- **Mode C (Project Evolution):** 
-  - *Trigger:* Continuous / Background.
-  - *Action:* The system silently updates your Initiative Compass and flags "Vision Drift" if you begin building features that contradict your stated goals.
-- **Mode D (Exploration & Design):** 
-  - *Trigger:* `"How should we architect the new payment flow?"`
-  - *Action:* The Handler maps the possibility space, forcing the Technical and Human clusters to debate scalability vs. UX.
-
-### Custom Workflows
-
-You can explicitly trigger predefined workflows to manage complex developments:
-
-- **/Expert system**
-  - *Usage:* Type this before any complex prompt to guarantee the AI drops its default persona and adopts the strict Orchestrator (Handler Agent) persona to route your query through the Parliament.
-- **/Session-Wise Build Planning**
-  - *Usage:* Type this when building a massive epic or complex feature.
-  - *Action:* To prevent AI context-window overflow and fatal hallucinations, the system will explicitly break the epic into isolated, numbered sessions (`session_01_db.md`, `session_02_api.md`). It will feed the executor agent exactly one session at a time, keeping it perfectly focused while the Handler safely remembers the overarching big picture.
-- **/Librarian - Memory Consolidation**
-  - *Usage:* Triggers automatically at the end of sessions and `/Expert system` workflows, but can also be triggered manually.
-  - *Action:* Forces the AI to adopt the strict "Librarian" persona, process all recent raw session logs, and automatically inject new architectural decisions and bug fixes into the permanent system directories without wasting tokens.
+| Profile | The "Aha!" Moment |
+|:---|:---|
+| **Solo Founders** | Having 78 senior advisors on call for every strategic pivot. |
+| **Team Leads** | Using the Parliament's output as a neutral "third-party" audit for PR reviews. |
+| **Enterprise Architects** | Surfacing cross-domain trade-offs (e.g., Security vs. Performance) automatically. |
+| **Open Source Builders** | Maintaining high quality and documentation standards across a distributed project. |
 
 ---
 
-## 🧩 Advanced: Expanding the Parliament
+### ⚖️ AN HONEST ANALYSIS: STRENGTHS & LIMITATIONS
 
-The 13 Core Domains natively cover universal development. But if you are building something highly specialized (e.g., an EdTech platform or a HIPAA-compliant medical tool), you can effortlessly add your own true subject-matter experts to the Parliament.
+#### Where it Excels 🚀
+- **Complex Decisions**: When you aren't sure between three different tech stacks.
+- **Blindspot Detection**: Surfacing the "boring" but critical security or DevOps concerns you forgot about.
+- **Preventing AI Slop**: The specialized voices are trained to reject generic, low-effort AI suggestions.
 
-1. Open `Custom-Agents/CUSTOM_AGENT_TEMPLATE.md` (if available, or model off an existing Domain).
-2. Draft your custom domain definition (e.g., `Custom_C1_Learning_Science.md`), ensuring you outline its 5 primary perspectives and 1 Wildcard.
-3. Register the new file within the `Custom-Agents/` directory.
-4. The Handler Agent will immediately discover it, calculate its relevance to all incoming queries, and invite it to the Parliamentary debates with equal weighted voting power to the core domains.
+#### Where it Struggles ⚠️
+- **Simple "Fix This Bug" Tasks**: For trivial typos, the system is overkill.
+- **Context Overload**: If you try to feed it 500 files at once, the experts' "hearing" gets muffled. 
+- **Model Quality**: The Parliament is only as smart as the LLM hosting it. It performs best on "Frontier" models (Claude Opus/Sonnet, GPT-4, etc.).
 
 ---
-*Built for the builder who wants their AI to think harder, think broader, and refuse to settle for the median answer.*
 
+### 🛠️ MASTERY GUIDE: HOW TO GET THE BEST RESULTS
+
+1. **The Atomic Question**: Ask one specific thing at a time. The more focused your question, the deeper the experts can dive.
+2. **Context Discipline**: Don't attach your entire project. Attach only the files relevant to the current problem.
+3. **Listen to the Dissent**: Don't just look for the consensus. The most valuable insights often come from the **Wildcard** or the **Dissenting Opinions**.
+4. **Update the Vault**: When the Parliament helps you reach a decision, record it. This builds the permanent "intelligence" of your repo.
+
+---
+
+### 🏁 DEPLOYMENT & EXTENSION
+
+#### Drop-In Deployment
+1. Copy the `Agentic-Expert-System/` folder into your repo.
+2. Point your AI agent at the workflow file: `.agents/workflows/Expert system.md`.
+3. Start the session.
+
+#### Extending the Parliament
+You can create your own specialized domains (e.g., a "Legal Compliance" or "Gaming Physics" expert) by following the template in `parliament/Custom-Agents/`. The system will automatically recognize and integrate them into the debate.
+
+## What You Get
+
+- Every AI prompt routed through multi-perspective analysis
+- Cross-domain trade-off surfacing (security checks your infrastructure, complexity checks your architecture)
+- Persistent memory that makes the system smarter for YOUR project over time
+- Wildcard perspectives that challenge generic AI advice
+- Works with any IDE agent that reads markdown (VS Code Copilot, Cursor, Claude Code, JetBrains AI)
+
+---
+
+## Quick Start
+
+1. Copy this folder into your project root
+2. Tell your IDE agent to use the workflow: point it at `.agents/workflows/Expert system.md`
+3. Ask any development question — the system handles everything else
+
+---
+
+## How It Works
+
+| Layer | What Loads | Token Cost | When Used | Recommended Model |
+|-------|-----------|------------|-----------|-------------------|
+| **Layer 1** | 13 compressed domain experts | ~8K tokens | Simple queries (CDRS < 3) | Any model (7B+, Haiku) |
+| **Layer 1.5** | Compressed experts + 1 full domain deep-dive | ~28K tokens | Default for most queries (CDRS 3-5) | Sonnet |
+| **Layer 2** | Full 78-perspective parliamentary debate | ~50-75K tokens | Major decisions, strategic pivots (CDRS >= 6) | Opus |
+
+**CDRS** (Cross-Domain Risk Score): The orchestrator scans your query against override triggers in all 13 domains. The count of triggered domains determines which layer handles your query.
+
+**Memory**: Decisions, directives, and user preferences persist across sessions in JSON files under `memory/`. The system gets smarter the more you use it.
+
+---
+
+## Directory Structure
+
+```
+├── .agents/
+│   └── workflows/
+│       └── Expert system.md            ← Workflow orchestrator (entry point)
+├── domains/
+│   ├── D01_strategy.md                 ← Compressed: Startup Strategy
+│   ├── D02_ecosystem.md                ← Compressed: Market Intelligence
+│   ├── D03_infrastructure.md           ← Compressed: Infrastructure
+│   ├── D04_cognition.md                ← Compressed: Developer Cognition
+│   ├── D05_ai_integration.md           ← Compressed: AI Integration
+│   ├── D06_product_design.md           ← Compressed: Product Design
+│   ├── D07_open_source.md              ← Compressed: Open Source
+│   ├── D08_systems_ux.md               ← Compressed: Systems UX
+│   ├── D09_mathematics.md              ← Compressed: Mathematics & Algorithms
+│   ├── D10_security.md                 ← Compressed: Security
+│   ├── D11_devops.md                   ← Compressed: Internal Systems & DevOps
+│   ├── D12_complexity.md               ← Compressed: Complexity Reduction
+│   └── D13_unconventional.md           ← Compressed: Unconventional Strategies
+├── memory/
+│   ├── decisions.json                  ← Domain-tagged decisions with rationale
+│   ├── directives.json                 ← Scoped standing orders
+│   ├── user_model.json                 ← Learned user preferences
+│   ├── changelog.md                    ← Append-only audit trail
+│   └── session_context.md              ← Multi-turn coherence checkpoints
+├── parliament/
+│   ├── SYSTEM_MANIFESTO.md             ← Core principles and architecture
+│   ├── HANDLER_AGENT.md                ← Parliamentary debate orchestrator
+│   ├── ROUTING_PROTOCOL.md             ← Domain routing and escalation rules
+│   ├── Domain_01_Strategy.md           ← Full: Startup Strategy (6 perspectives)
+│   ├── Domain_02_Ecosystem.md          ← Full: Market Intelligence
+│   ├── Domain_03_Infrastructure.md     ← Full: Infrastructure
+│   ├── Domain_04_Cognition.md          ← Full: Developer Cognition
+│   ├── Domain_05_AI_Integration.md     ← Full: AI Integration
+│   ├── Domain_06_Product_Design.md     ← Full: Product Design
+│   ├── Domain_07_Open_Source.md        ← Full: Open Source
+│   ├── Domain_08_Systems_UX.md         ← Full: Systems UX
+│   ├── Domain_09_Mathematics.md        ← Full: Mathematics & Algorithms
+│   ├── Domain_10_Security.md           ← Full: Security
+│   ├── Domain_11_DevOps.md             ← Full: Internal Systems & DevOps
+│   ├── Domain_12_Complexity.md         ← Full: Complexity Reduction
+│   ├── Domain_13_Unconventional.md     ← Full: Unconventional Strategies
+│   └── Custom-Agents/                  ← Project-specific domain experts
+│       ├── AGENT_REGISTRY.md
+│       └── CUSTOM_AGENT_TEMPLATE.md
+├── initiative-compass.md               ← Living project compass (auto-populated)
+├── DISTILL.md                          ← Domain re-compression guide
+└── README.md                           ← This file
+```
+
+**40 files total** — no database, no API keys, no build step.
+
+---
+
+## Customization
+
+- **Adding custom domain agents:** Follow the template in `parliament/Custom-Agents/CUSTOM_AGENT_TEMPLATE.md`
+- **Modifying compressed domains:** See `DISTILL.md` for the re-compression process
+- **Initiative compass:** Auto-populated on first contact with a project, editable anytime at `initiative-compass.md`
+
+---
+
+## Cost Estimates
+
+| Layer | Model | Tokens/Query | Cost/Query | Monthly (50q/day) |
+|-------|-------|-------------|------------|--------------------|
+| Layer 1 | Any (7B+, Haiku) | ~8,000 | ~$0.002 | ~$3 |
+| Layer 1.5 | Sonnet | ~28,000 | ~$0.07 | ~$100 |
+| Layer 2 | Opus | ~50-75,000 | ~$0.25 | ~$375 |
+| **Mixed (typical)** | Mixed | — | — | **~$10** |
+
+Most queries resolve at Layer 1 or 1.5. Layer 2 is reserved for major architectural decisions.
+
+---
+
+## Portability
+
+- No external dependencies
+- No database, no API keys, no build step
+- Memory starts empty — fresh for every project
+- Works offline with local models (Layer 1 and 1.5)
+- Pure markdown — works with any IDE agent that reads `.md` files
+
+---
+
+> "You don't need a better AI. You need a better process for the AI you have."
